@@ -30,6 +30,9 @@ h1 {
     font-family: Verdana, sans-seif;
 	font-weight: lighter;
 	margin-left: 30px;
+	margin-right: 30px;
+	border: 1px solid rgb(11, 48, 75);
+	border-radius: 6px;
 }
 
 /* Style the links inside the navigation bar */
@@ -147,15 +150,19 @@ a:active {
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 465px) {
 	.topnav {
-		display: none;
+	  display: none;
+	}
+
+	.resume-header {
+	  display: inline-block;
 	}
 
 	.navicon {
-	display: inline;
-	float: right;
-	overflow: hidden;
+	  display: inline;
+	  float: right;
+	  overflow: hidden;
 	}
 
 	.dropbtn {
@@ -197,6 +204,7 @@ a:active {
 	.navicon:hover .dropdown-content {
 	  display: block;
 	}
+
 }
 
 .project img{
@@ -240,4 +248,9 @@ a:active {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.resume-header {
+	display: block;
+	text-align: center;
 }
