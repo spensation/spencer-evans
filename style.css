@@ -53,33 +53,7 @@ h1 {
     color: white;
 }
 
-.resume-header a {
-	text-decoration: none;
-	color: black;
-}
 
-.resume-header a:hover {
-	border-bottom: 2px solid red;
-}
-
-.resume-projects a {
-	text-decoration: none;
-	color: black;
-}
-
-.resume-projects a:hover {
-	border-bottom: 2px solid red;
-}
-
-.resume-projects p {
-	text-align: left;
-	margin-left: 150px;
-}
-
-.employment p {
-	text-align: left;
-	margin-left: 150px;
-}
 
 a {
 	text-decoration: none;
@@ -282,35 +256,53 @@ a:active {
 	margin: auto;
 }
 
-.resume-projects p {
+.resume-projects p, h4 {
 	text-align: left;
 	width: 70%;
 	margin: auto;
 }
+
+.resume-header a {
+	text-decoration: none;
+	color: black;
+}
+
+.resume-header a:hover {
+	border-bottom: 2px solid red;
+}
+
+.resume-projects a {
+	text-decoration: none;
+	color: black;
+}
+
+.resume-projects a:hover {
+	border-bottom: 2px solid red;
+}
+
 
 .project-details {
 	text-indent: 10px;
 }
 
-.skills {
-	width: 70%;
-	margin: auto;}
-
-.education {
-	width: 70%;
-	margin: auto;
-}
-
-.employment {
-	width: 70%;
-	margin: auto;
-}
-
-.employment p {
+.skills p, h4 {
 	text-align: left;
-	width: 100%;
+	width: 70%;
 	margin: auto;
 }
+
+.education p, h4 {
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.employment p, h4 {
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
 
 .employment-details {
 	text-indent: 10px;
