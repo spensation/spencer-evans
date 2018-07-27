@@ -1,16 +1,18 @@
-html{
+/*html{
 	text-align: center;
-}
+
+}*/
 
 body {
-	background: linear-gradient(rgba(70, 0, 120, 0.3), rgba(70, 30, 0, 0.2));
+	text-align: center;
+	background: linear-gradient(45deg, hsl(240, 35%, 40%), hsl(300, 35%, 40%));
 }
 
 .content-box h1 {
 	font-family: Verdana, sans-serif;
 	font-weight: lighter;
-	font-size: 5vw;
-	color: white;
+	font-size: 5.5vw;
+	color: hsl(180, 02%, 70%);
 	text-align: center;
 	letter-spacing: 7px;
 	
@@ -24,9 +26,9 @@ body {
 .index-details {
 	font-family: Verdana, sans-serif;
 	font-weight: lighter;
-	font-size: 3vw;
-
-	color: white;
+	font-size: 3.5vw;
+	line-height: 6vh;
+	color: hsl(180, 02%, 70%);
 	text-align: center;
 	padding: 20px;
 }
@@ -43,7 +45,7 @@ body {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: black;
+    color: hsl(180, 02%, 70%);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -52,46 +54,50 @@ body {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-    border-bottom: 4px solid #136;
-}
+/*.topnav a:hover {
+    border-bottom: 4px solid hsl(180, 02%, 70%);;
+    font-size: 24px;
+}*/
 
-.topnav span:hover {
-    border-bottom: 4px solid #136;
+.pseudo-link:hover {
+    color: hsl(180, 100%, 50%);;
 }
 
 /* Add a color to the active/current link */
 .topnav a:active {
-    background-color: #136;
-    color: white;
+    background-color: hsl(240, 25%, 50%);
+    color: hsl(180, 02%, 70%);
 }
 
 
 
-a {
+.topnav a {
 	text-decoration: none;
-	color: white;
+	color: hsl(180, 02%, 70%);
+	font-size: 3vw;
+	
 }
 
-a:hover {
-	border-bottom: 4px solid azure;
+.topnav a:hover {
+	color: hsl(180, 100%, 50%);
+	/*border-bottom: 2.5px solid hsl(240, 87%, 45%);*/
 }
 
 .pseudo-link {
-	color: black;
+	color: hsl(180, 02%, 70%);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 3vw;
     letter-spacing: 1.5px;
 }
 
-span:hover {
-	border-bottom: 4px solid azure;
+#hot-button:hover {
+	border-bottom: 2.5px solid hsl(180, 100%, 50%);
 }
 
 a:active {
-	color: white;
+	color: hsl(180, 02%, 70%);
 	text-decoration: none;
 }
 
@@ -111,7 +117,7 @@ a:active {
 }
 
 .content-box {
-	background-color: #136;
+	background-color: hsl(240, 87%, 45%);
 	border: 1px solid rgb(11, 48, 75);
 	border-radius: 6px;
 	padding: 30px;
@@ -119,6 +125,17 @@ a:active {
 	margin-left: 30px;
 	margin-right: 30px;
 
+}
+
+.content-box a {
+	text-decoration: none;
+	color: hsl(180, 02%, 70%);
+	font-size: 3vw;
+	
+}
+
+.content-box a:hover {
+	border-bottom: 2.5px solid hsl(180, 100%, 50%);
 }
 
 .headshot {
@@ -127,14 +144,14 @@ a:active {
   	right: 10px;
 	text-align: right;
 	float: right;
-	margin-right: 30px;
-	margin-top: 10px;
+	margin-right: 5vw;
+	margin-top: 3vw;
 }
 
 #sepic {
 	width:auto;
     height:auto;
-    max-width: 55%;
+    max-width: 10vw;
     max-height: 29vh;
 	border: 2px solid rgb(11, 48, 75);
 	border-radius: 180px;
@@ -143,26 +160,260 @@ a:active {
 	z-index: 1;
 }
 
-@media screen and (max-width: 640px){
-	#sepic {
-	    display: none;
-	}
 
-	.content-box {
-	background-color: #136;
-	border: 1px solid rgb(11, 48, 75);
-	border-radius: 6px;
-	padding: 30px;
-	display: inline-block;
+.resume-header {
+	color: hsl(180, 02%, 70%);
+	font-family: Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 2vw;
+	display: block;
+	text-align: center;
+}
+
+.resume-header h1 {
+	color: hsl(180, 02%, 70%);
+	font-family: Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 7vw;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 7px;
+}
+
+
+.resume-summary {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.resume-projects p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.resume-header a {
+	color: hsl(180, 02%, 70%);
+	font-size: 2vw;
+	text-decoration: none;
+	
+}
+
+.resume-header a:hover {
+	border-bottom: 2px solid #136;
+}
+
+.resume-projects a {
+	font-size: 2vw;
+	text-decoration: none;
+	color: hsl(180, 02%, 70%);
+}
+
+.resume-projects a:hover {
+	border-bottom: 2px solid #136;
+}
+
+
+.project-details {
+	text-indent: 10px;
+}
+
+.skills p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.education p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.employment p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+
+.employment-details {
+	color: hsl(180, 02%, 70%);
+	text-indent: 10px;
+}
+
+h4 {
+	text-decoration: underline;
+	font-weight: lighter;
+}
+
+
+
+}
+
+.project img{
+	height: 250px;
+	width: 250px;
+	border: 1px solid black;
+	margin: auto;
+}
+
+.project-intro {
+	margin-left: 30px;
+}
+
+.line-break {
+	color: hsl(180, 02%, 70%);
+	width: 75%;
+}
+
+.footer {
 	margin-left: 30px;
 	margin-right: 30px;
-	z-index: 0;
-	float: top;
-}
 
 }
 
-@media screen and (min-width: 640px){
+.footnote {
+	text-align: center;
+	display: block;
+	color: hsl(180, 02%, 55%);
+}
+
+.social {
+	float: right;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+.fa {
+    display: inline-block;
+    color: hsl(180, 02%, 70%);
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa:hover {
+	color: hsl(180, 100%, 50%);
+	border-bottom-style: none;
+}
+
+#resume-hidden {
+	width: 85%;
+	margin: auto;
+}
+
+.resume-header {
+	color: hsl(180, 02%, 70%);
+	font-family: Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 2vw;
+	display: block;
+	text-align: center;
+}
+
+.resume-header h1 {
+	color: hsl(180, 02%, 70%);
+	font-family: Verdana, sans-serif;
+	font-weight: lighter;
+	font-size: 7vw;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 7px;
+}
+
+
+.resume-summary {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.resume-projects p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.resume-header a {
+	color: hsl(180, 02%, 70%);
+	font-size: 2vw;
+	text-decoration: none;
+	
+}
+
+.resume-header a:hover {
+	border-bottom: 2px solid #136;
+}
+
+.resume-projects a {
+	font-size: 2vw;
+	text-decoration: none;
+	color: hsl(180, 02%, 70%);
+}
+
+.resume-projects a:hover {
+	border-bottom: 2px solid #136;
+}
+
+
+.project-details {
+	text-indent: 10px;
+}
+
+.skills p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.education p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+.employment p, h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}
+
+
+.employment-details {
+	color: hsl(180, 02%, 70%);
+	text-indent: 10px;
+}
+
+h4 {
+	text-decoration: underline;
+	font-weight: lighter;
+}
+
+hr {
+	width: 70%;
+	opacity: 0.5;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 900px){
 	#sepic {
 		width:auto;
 	    height:auto;
@@ -172,13 +423,56 @@ a:active {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
+	#sepic {
+		display: none;
+	}
+
 	.topnav {
 	  display: none;
 	}
 
-	.resume-header {
-	  display: inline-block;
+	.content-box h1 {
+		font-family: Verdana, sans-serif;
+		font-weight: lighter;
+		font-size: 7vw;
+		color: hsl(180, 02%, 70%);
+		text-align: center;
+		letter-spacing: 7px;
+		
+	}
+
+	/* js animation */
+	#resume-hidden {
+		display: none;
+	}
+
+	.index-details {
+		font-family: Verdana, sans-serif;
+		font-weight: lighter;
+		font-size: 5vw;
+
+		color: hsl(180, 02%, 70%);
+		text-align: center;
+		padding: 20px;
+	}
+
+	.content-box {
+		background-color: hsl(240, 87%, 45%);
+		border: 1px solid rgb(11, 48, 75);
+		border-radius: 6px;
+		padding: 30px;
+		display: inline-block;
+		margin-left: 30px;
+		margin-right: 30px;
+
+	}
+
+	.content-box a {
+		text-decoration: none;
+		color: hsl(180, 02%, 70%);
+		font-size: 5vw;
+		
 	}
 
 	.navicon {
@@ -201,7 +495,7 @@ a:active {
 	.dropdown-content {
 	  display: none;
 	  position: absolute;
-	  background-color: #f9f9f9;
+	  background-color: silver;
 	  min-width: 160px;
 	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	  z-index: 1;
@@ -227,123 +521,8 @@ a:active {
 	  display: block;
 	}
 
-}
-
-.project img{
-	height: 250px;
-	width: 250px;
-	border: 1px solid black;
+	#resume-hidden {
+	width: 85%;
 	margin: auto;
 }
 
-.project-intro {
-	margin-left: 30px;
-}
-
-.line-break {
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
-.footer {
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
-.footnote {
-	text-align: center;
-	display: block;
-}
-
-.social {
-	float: right;
-	margin-left: 30px;
-	margin-right: 30px;
-}
-
-.fa-3x {
-    font-size: 3em;
-}
-.fa {
-    display: inline-block;
-    color: rgb(11, 48, 75);
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.resume-header {
-	font-family: Verdana, sans-serif;
-	font-weight: lighter;
-	font-size: 1.8vw;
-	display: block;
-	text-align: center;
-}
-
-.resume-summary {
-	text-align: left;
-	width: 70%;
-	margin: auto;
-}
-
-.resume-projects p, h4 {
-	text-align: left;
-	width: 70%;
-	margin: auto;
-}
-
-.resume-header a {
-	text-decoration: none;
-	color: black;
-}
-
-.resume-header a:hover {
-	border-bottom: 2px solid red;
-}
-
-.resume-projects a {
-	text-decoration: none;
-	color: black;
-}
-
-.resume-projects a:hover {
-	border-bottom: 2px solid red;
-}
-
-
-.project-details {
-	text-indent: 10px;
-}
-
-.skills p, h4 {
-	text-align: left;
-	width: 70%;
-	margin: auto;
-}
-
-.education p, h4 {
-	text-align: left;
-	width: 70%;
-	margin: auto;
-}
-
-.employment p, h4 {
-	text-align: left;
-	width: 70%;
-	margin: auto;
-}
-
-
-.employment-details {
-	text-indent: 10px;
-}
-
-h4 {
-	text-decoration: underline;
-}
-
-hr {
-	width: 70%;
-}
