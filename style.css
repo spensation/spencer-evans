@@ -657,7 +657,10 @@ hr {
 	}
 
 	.project-intro {
-		font-size: 4vw;
+		font-size: 6vw;
+		margin: auto;
+		width: 80%;
+		text-align: left;
 	}
 }
 
