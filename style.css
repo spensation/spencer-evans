@@ -1,6 +1,6 @@
 html{
 	text-align: center;
-	height: 250%;
+	height: 350%;
 }
 
 body {
@@ -152,8 +152,8 @@ a:active {
 #sepic {
 	width:auto;
     height:auto;
-    max-width: 10vw;
-    max-height: 29vh;
+    max-width: 12vw;
+    max-height: 30vh;
 	border: 2px solid rgb(11, 48, 75);
 	border-radius: 180px;
 	display: inline-block;
@@ -359,7 +359,7 @@ h4 {
 }
 
 .resume-header a:hover {
-	border-bottom: 2px solid #136;
+	border-bottom: 2px solid hsl(180, 100%, 50%);
 }
 
 .resume-projects a {
@@ -369,7 +369,7 @@ h4 {
 }
 
 .resume-projects a:hover {
-	border-bottom: 2px solid #136;
+	border-bottom: 1px solid hsl(180, 100%, 50%);
 }
 
 
@@ -414,13 +414,26 @@ h4 {
 }
 
 hr {
-	width: 70%;
+	width: 50vw;
 	opacity: 0.5;
+}
+
+/*PROJECTS PAGE*/
+
+.project-intro {
+	font-size: 2.5vw;
+	color: hsl(180, 02%, 70%);
+}
+
+.project a {
+	width: 70%;
+	height: 50%;
+	margin: auto;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 900px){
+/*@media screen and (min-width: 900px){
 	#sepic {
 		width:auto;
 	    height:auto;
@@ -428,7 +441,7 @@ hr {
 	    max-height: 35vh;
 	    margin-bottom: 10px;
 	}
-}
+}*/
 
 @media screen and (max-width: 650px) {
 	#sepic {
@@ -502,7 +515,7 @@ hr {
 	.dropdown-content {
 	  display: none;
 	  position: absolute;
-	  background-color: silver;
+	  background-color: hsl(240, 25%, 75%);
 	  min-width: 160px;
 	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	  z-index: 1;
@@ -511,7 +524,7 @@ hr {
 	/* Links inside the dropdown */
 	.dropdown-content a {
 	  float: none;
-	  color: black;
+	  color: hsl(240, 87%, 45%);
 	  padding: 12px 16px;
 	  text-decoration: none;
 	  display: block;
@@ -520,7 +533,7 @@ hr {
 
 	/* Add a grey background color to dropdown links on hover */
 	.dropdown-content a:hover {
-	  background-color: #ddd;
+	  background-color: hsl(180, 100%, 50%);
 	}
 
 	/* Show the dropdown menu on hover */
@@ -529,7 +542,122 @@ hr {
 	}
 
 	#resume-hidden {
-	width: 85%;
-	margin: auto;
+		width: 90%;
+		margin: auto;
+	}
+
+	.resume-header {
+		color: hsl(180, 02%, 70%);
+		font-family: Verdana, sans-serif;
+		font-weight: lighter;
+		font-size: 4vw;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	.resume-header h1 {
+		color: hsl(180, 02%, 70%);
+		font-family: Verdana, sans-serif;
+		font-weight: lighter;
+		font-size: 7.5vw;
+		text-align: center;
+		text-decoration: none;
+		letter-spacing: 7px;
+	}
+
+
+	.resume-summary {
+		font-size: 4vw;
+		color: hsl(180, 02%, 70%);
+		text-align: left;
+		width: 90%;
+		margin: auto;
+	}
+
+	.resume-projects p {
+		font-size: 4vw;
+		color: hsl(180, 02%, 70%);
+		text-align: left;
+		width: 90%;
+		margin: auto;
+	}
+
+	.resume-header a {
+		color: hsl(180, 02%, 70%);
+		font-size: 4vw;
+		text-decoration: none;
+		
+	}
+
+	.resume-header a:hover {
+		border-bottom: 1.5px solid hsl(180, 100%, 50%);
+	}
+
+	.resume-projects a {
+		font-size: 4vw;
+		text-decoration: none;
+		color: hsl(180, 02%, 70%);
+	}
+
+	.resume-projects a:hover {
+		border-bottom: 1px solid hsl(180, 100%, 50%);
+	}
+
+
+	.project-details {
+		text-indent: 10px;
+	}
+
+	.skills p {
+		font-size: 4vw;
+		color: hsl(180, 02%, 70%);
+		text-align: left;
+		width: 90%;
+		margin: auto;
+	}
+
+	.education p {
+		font-size: 4vw;
+		color: hsl(180, 02%, 70%);
+		text-align: left;
+		width: 90%;
+		margin: auto;
+	}
+
+	.employment p  {
+		font-size: 4vw;
+		color: hsl(180, 02%, 70%);
+		text-align: left;
+		width: 90%;
+		margin: auto;
+	}
+
+
+	.employment-details {
+		color: hsl(180, 02%, 70%);
+		text-indent: 10px;
+	}
+
+	h4 {
+		text-decoration: underline;
+		font-weight: lighter;
+		font-size: 4.25vw;
+		text-align: left;
+		width: 90%;
+	}
+
+	hr {
+		width: 50vw;
+		opacity: 0.5;
+	}
+
+	#project-topline {
+		opacity: 0;
+	}
+
+	.project-intro {
+		font-size: 4vw;
+	}
 }
 
