@@ -1,12 +1,16 @@
+/*
 html{
 	text-align: center;
-	flex-basis: auto;
-}
+	
+}*/
 
 body {
 	text-align: center;
 	background: linear-gradient(45deg, hsl(240, 35%, 40%), hsl(300, 35%, 40%));
 	background-size: contain;
+	background-repeat: no-repeat;
+	flex-basis: auto;
+	padding-bottom: 15vh;
 }
 
 .content-box h1 {
@@ -42,17 +46,11 @@ body {
     font-family: Verdana, sans-seif;
 	font-weight: lighter;
 	text-align: center;
+	width: 100%;
+	margin-top: 4vw;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    color: hsl(180, 02%, 70%);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    letter-spacing: 1.5px;
-}
+
 
 /* Change the color of links on hover */
 /*.topnav a:hover {
@@ -71,11 +69,12 @@ body {
 }
 
 
-
+/* Style the links inside the navigation bar */
 .topnav a {
 	text-decoration: none;
 	color: hsl(180, 02%, 70%);
-	font-size: 3vw;
+	font-size: 3.8vw;
+	margin: 1vw 3vw 1vw 3vw;
 	
 }
 
@@ -89,7 +88,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 3.8vw;
     letter-spacing: 1.5px;
 }
 
@@ -125,6 +124,7 @@ a:active {
 	display: inline-block;
 	margin-left: 30px;
 	margin-right: 30px;
+	margin-top: 5vh;
 
 }
 
@@ -146,7 +146,7 @@ a:active {
 	text-align: right;
 	float: right;
 	margin-right: 5vw;
-	margin-top: 3vw;
+	margin-top: 8vh;
 }
 
 #sepic {
@@ -161,7 +161,7 @@ a:active {
 	z-index: 1;
 }
 
-
+/*
 .resume-header {
 	color: hsl(180, 02%, 70%);
 	font-family: Verdana, sans-serif;
@@ -179,9 +179,9 @@ a:active {
 	text-align: center;
 	text-decoration: none;
 	letter-spacing: 7px;
-}
+}*/
 
-
+/*
 .resume-summary {
 	font-size: 2vw;
 	color: hsl(180, 02%, 70%);
@@ -190,7 +190,8 @@ a:active {
 	margin: auto;
 }
 
-.resume-projects p, h4 {
+.resume-projects p {
+	font-size: 2vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
@@ -223,21 +224,24 @@ a:active {
 	text-indent: 10px;
 }
 
-.skills p, h4 {
+.skills p {
+	font-size: 2vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
 	margin: auto;
 }
 
-.education p, h4 {
+.education p {
+	font-size: 2vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
 	margin: auto;
 }
 
-.employment p, h4 {
+.employment p {
+	font-size: 2vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
@@ -246,6 +250,7 @@ a:active {
 
 
 .employment-details {
+	font-size: 2vw;
 	color: hsl(180, 02%, 70%);
 	text-indent: 10px;
 }
@@ -253,8 +258,11 @@ a:active {
 h4 {
 	text-decoration: underline;
 	font-weight: lighter;
-}
-
+	color: hsl(180, 02%, 70%);
+	text-align: left;
+	width: 70%;
+	margin: auto;
+}*/
 
 
 }
@@ -320,7 +328,7 @@ h4 {
 	color: hsl(180, 02%, 70%);
 	font-family: Verdana, sans-serif;
 	font-weight: lighter;
-	font-size: 2vw;
+	font-size: 2.25vw;
 	display: block;
 	text-align: center;
 }
@@ -337,6 +345,7 @@ h4 {
 
 
 .resume-summary {
+	font-size: 2.25vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
@@ -344,7 +353,7 @@ h4 {
 }
 
 .resume-projects p {
-	font-size: 1.8vw;
+	font-size: 2.25vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
@@ -353,7 +362,7 @@ h4 {
 
 .resume-header a {
 	color: hsl(180, 02%, 70%);
-	font-size: 1.8vw;
+	font-size: 2.25vw;
 	text-decoration: none;
 	
 }
@@ -363,7 +372,7 @@ h4 {
 }
 
 .resume-projects a {
-	font-size: 2vw;
+	font-size: 2.25vw;
 	text-decoration: none;
 	color: hsl(180, 02%, 70%);
 }
@@ -378,7 +387,7 @@ h4 {
 }
 
 .skills p {
-	font-size: 2vw;
+	font-size: 2.25vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
@@ -386,7 +395,7 @@ h4 {
 }
 
 .education p {
-	font-size: 1.8vw;
+	font-size: 2.25vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
@@ -394,7 +403,7 @@ h4 {
 }
 
 .employment p  {
-	font-size: 1.8vw;
+	font-size: 2.25vw;
 	color: hsl(180, 02%, 70%);
 	text-align: left;
 	width: 70%;
@@ -408,9 +417,13 @@ h4 {
 }
 
 h4 {
+	color: hsl(180, 02%, 70%);
+	text-align: left;
 	text-decoration: underline;
 	font-weight: lighter;
-	font-size: 2.15vw;
+	font-size: 3.25vw;
+	width: 70%;
+	margin: auto;
 }
 
 hr {
@@ -444,6 +457,9 @@ hr {
 }*/
 
 @media screen and (max-width: 650px) {
+	#pipes {
+		display: none;
+	}
 	#sepic {
 		display: none;
 	}
@@ -455,10 +471,10 @@ hr {
 	.content-box h1 {
 		font-family: Verdana, sans-serif;
 		font-weight: lighter;
-		font-size: 7vw;
+		font-size: 8.25vw;
 		color: hsl(180, 02%, 70%);
 		text-align: center;
-		letter-spacing: 7px;
+		letter-spacing: 8px;
 		
 	}
 
@@ -550,7 +566,7 @@ hr {
 		color: hsl(180, 02%, 70%);
 		font-family: Verdana, sans-serif;
 		font-weight: lighter;
-		font-size: 4vw;
+		font-size: 5.5vw;
 		display: block;
 		text-align: center;
 		width: 100%;
@@ -568,7 +584,7 @@ hr {
 
 
 	.resume-summary {
-		font-size: 4vw;
+		font-size: 5.5vw;
 		color: hsl(180, 02%, 70%);
 		text-align: left;
 		width: 90%;
@@ -576,7 +592,7 @@ hr {
 	}
 
 	.resume-projects p {
-		font-size: 4vw;
+		font-size: 5.5vw;
 		color: hsl(180, 02%, 70%);
 		text-align: left;
 		width: 90%;
@@ -585,7 +601,7 @@ hr {
 
 	.resume-header a {
 		color: hsl(180, 02%, 70%);
-		font-size: 4vw;
+		font-size: 5.5vw;
 		text-decoration: none;
 		
 	}
@@ -595,7 +611,7 @@ hr {
 	}
 
 	.resume-projects a {
-		font-size: 4vw;
+		font-size: 5.5vw;
 		text-decoration: none;
 		color: hsl(180, 02%, 70%);
 	}
@@ -610,7 +626,7 @@ hr {
 	}
 
 	.skills p {
-		font-size: 4vw;
+		font-size: 5.5vw;
 		color: hsl(180, 02%, 70%);
 		text-align: left;
 		width: 90%;
@@ -618,7 +634,7 @@ hr {
 	}
 
 	.education p {
-		font-size: 4vw;
+		font-size: 5.5vw;
 		color: hsl(180, 02%, 70%);
 		text-align: left;
 		width: 90%;
@@ -626,7 +642,7 @@ hr {
 	}
 
 	.employment p  {
-		font-size: 4vw;
+		font-size: 5.5vw;
 		color: hsl(180, 02%, 70%);
 		text-align: left;
 		width: 90%;
