@@ -6,7 +6,7 @@ html{
 
 body {
 	text-align: center;
-	background: linear-gradient(45deg, hsl(240, 20%, 88%), hsl(300, 20%, 88%));
+	background: linear-gradient(45deg, hsl(240, 10%, 88%), hsl(300, 10%, 88%));
 	/*background: linear-gradient(45deg, hsl(240, 35%, 40%), hsl(300, 35%, 40%));*/
 	background-size: contain;
 	background-repeat: no-repeat;
